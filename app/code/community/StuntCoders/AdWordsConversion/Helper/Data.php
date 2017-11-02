@@ -6,6 +6,7 @@ class StuntCoders_AdWordsConversion_Helper_Data extends Mage_Core_Helper_Abstrac
 
     const CONVERSION_ID = 'stuntcoders_adwordsconversion/general/conversion_id';
     const CONVERSION_LABEL = 'stuntcoders_adwordsconversion/general/label';
+    const CONVERSION_FORMAT = 'stuntcoders_adwordsconversion/general/format';
     const CONVERSION_LANGUAGE = 'stuntcoders_adwordsconversion/general/language';
     const CONVERSION_COLOR = 'stuntcoders_adwordsconversion/general/color';
     const REMARKETING_ONLY = 'stuntcoders_adwordsconversion/general/remarketing_only';
@@ -35,6 +36,15 @@ class StuntCoders_AdWordsConversion_Helper_Data extends Mage_Core_Helper_Abstrac
     public function getLabel($storeId = null)
     {
         return Mage::getStoreConfig(self::CONVERSION_LABEL, $storeId);
+    }
+
+    /**
+     * @param mixed $storeId
+     * @return int
+     */
+    public function getConversionFormat($storeId = null)
+    {
+        return Mage::getStoreConfig(self::CONVERSION_FORMAT, $storeId);
     }
 
     /**

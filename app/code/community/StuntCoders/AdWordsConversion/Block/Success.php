@@ -35,6 +35,14 @@ class StuntCoders_AdWordsConversion_Block_Success extends Mage_Core_Block_Templa
     }
 
     /**
+     * @return int
+     */
+    public function getConversionFormat()
+    {
+        return $this->_getHelper()->getConversionFormat();
+    }
+
+    /**
      * @return string
      */
     public function isGoogleRemarketingOnly()
