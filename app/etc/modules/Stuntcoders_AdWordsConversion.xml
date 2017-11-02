@@ -3,7 +3,7 @@
     <modules>
         <StuntCoders_AdWordsConversion>
             <active>true</active>
-            <codePool>local</codePool>
+            <codePool>community</codePool>
         </StuntCoders_AdWordsConversion>
     </modules>
 </config>
